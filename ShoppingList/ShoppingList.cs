@@ -24,7 +24,8 @@ namespace ShoppingList
             // Check if Name and Quantity entries are valid
             if (String.IsNullOrWhiteSpace(nameTextBox.Text) || String.IsNullOrEmpty(quantityTextBox.Text))
             {
-                MessageBox.Show("You entered an invalid Name or Quantity." + Environment.NewLine + "Please enter valid values", "Invalid Entries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You entered an invalid Name or Quantity." + Environment.NewLine + "Please enter valid values", 
+                    "Invalid Entries", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
                 return;
             }
@@ -36,7 +37,8 @@ namespace ShoppingList
             }
             catch 
             {
-                MessageBox.Show("You entered an invalid Quantity." + Environment.NewLine + "Please enter a valid value", "Invalid Quantity", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You entered an invalid Quantity." + Environment.NewLine + "Please enter a valid value", 
+                    "Invalid Quantity", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
                 return;
             }
